@@ -2,5 +2,7 @@
 Data Repository for Data Mastery Challenge - Urban Dynamic
 
 USER WORKFLOW DATA_ACQUISITION.PY
-Open a python terminal and enter: pip install requests
-enter: pip install shapely
+1. Open a python terminal and enter: 
+pip install requests
+pip install shapely
+pip install geopandas

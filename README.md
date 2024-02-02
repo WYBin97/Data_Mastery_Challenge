@@ -1,9 +1,8 @@
 # Data_Mastery_Challenge
-Data Repository for Data Mastery Challenge - Urban Dynamic
 
-USER WORKFLOW DATA_ACQUISITION
+USER WORKFLOW MANUAL
 
-1. Download the folder src, unzip it and save it somewhere on your machine.
+1. In this GitHub repository browse to and download the folder src, unzip it and save it on your machine.
 2. Open an Integrated Development Environment (IDE) like VSCode or PyCharm on your machine.
 3. Open the file data.acquisition.py
 4. Open a python terminal and run the following lines: 

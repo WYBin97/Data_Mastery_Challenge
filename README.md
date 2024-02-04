@@ -34,10 +34,7 @@ General #3: Read carefully read the hashed comments providing explanation
 
 22. Open the file phase_02_5_mergy.py
 23. Line 5: Enter all your created category.geojson files with their corresponding class values
-
-
-
-
-
-
+\
+\
+\
 User Workflow for SENTINEL-2 PROCESSING and OPEN SPACE MAPPING are documented within the script for readability and sharing.

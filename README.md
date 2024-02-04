@@ -40,4 +40,4 @@ General #3: Read carefully read the hashed comments providing explanation
 
 
 
-USER WORKFLOW SENTINEL-2 PROCESSING
+User Workflow for SENTINEL-2 PROCESSING and OPEN SPACE MAPPING are documented within the script for readability and sharing.

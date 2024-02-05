@@ -1,5 +1,6 @@
 # USER WORKFLOW MANUAL
-![kampala_classification](https://github.com/WYBin97/Data_Mastery_Challenge/assets/50994180/398666ee-24b1-4c5b-a3b4-19f6e9ae1c87)
+![openspacemapping](https://github.com/WYBin97/Data_Mastery_Challenge/assets/50994180/4834e41f-35ce-4b54-9f63-c8c8256e58e9)
+
 
 ## General Guidelines
 - **General #1**: Upon opening a new `.py` file, make sure you import or have downloaded the necessary modules stated at the top of the file. This can be done by opening a terminal and running: `pip install MODULENAME`
@@ -95,4 +96,7 @@
 - **Exporting**: Sentinel 2 Classified Map and Confusion Matrix are exported to Drive for sharing; navigate to the Tasks panel on the left and select Run.
 - **Example Code**: `print(RF_Classification('projects/data-mastery-challenge-sharing/assets/Area_of_Interest', 'projects/data-mastery-challenge-sharing/assets/Sentinel_2_Cloud_Free_Image_Composite', 'projects/data-mastery-challenge-sharing/assets/land_cover_reference_data_2023'));`
 - **Execution**: Run the code.
+
+*You can then process the exported image into vector and stylize it in your local geospatial software. This is the result of our urban space mapping in Kampala*
+![Urban_Open_Space_Map](https://github.com/WYBin97/Data_Mastery_Challenge/assets/50994180/b41646b4-0364-4f8d-a3f4-252aa5de547a)
 

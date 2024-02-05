@@ -97,6 +97,7 @@
 - **Example Code**: `print(RF_Classification('projects/data-mastery-challenge-sharing/assets/Area_of_Interest', 'projects/data-mastery-challenge-sharing/assets/Sentinel_2_Cloud_Free_Image_Composite', 'projects/data-mastery-challenge-sharing/assets/land_cover_reference_data_2023'));`
 - **Execution**: Run the code.
 
-*You can then process the exported image into vector and stylize it in your local geospatial software. This is the result of our urban space mapping in Kampala*
+*You can then process the exported image into vector and stylize it in your local geospatial software. This is the result of our urban space mapping in Kampala:*
+
 ![Urban_Open_Space_Map](https://github.com/WYBin97/Data_Mastery_Challenge/assets/50994180/b41646b4-0364-4f8d-a3f4-252aa5de547a)
 

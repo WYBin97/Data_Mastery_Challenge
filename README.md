@@ -70,3 +70,28 @@
 4. Run the file once.
 
 *User Workflow for SENTINEL-2 PROCESSING and OPEN SPACE MAPPING are documented within the script for readability and sharing. The result file from the merge is a shapefile, and you will need to upload it to GEE Asset.*
+
+## Phase 3: Sentinel-2 Image Processing
+- **Code**: [Google Earth Engine Script](https://code.earthengine.google.com/e8fb7091bff277f9ee49970b3bfece25)
+- **Goal**: Processing Sentinel-2 imagery with recommended bands and indices for processing urban open space classification as mentioned in Aguilar and Kuffer (2020).
+- **User Input Customization in the `S2_Processing` function**:
+  - **Change Time Interval**: Replace `Date_Start` and `Date_End` with your desired date in the format: `YYYY-MM-DD` to get the desired time period.
+  - **Change Cloud Percentage**: Replace `Cloud_Percentage` with a numerical value (recommended: 0-20, a lower value will generate a clearer image).
+  - **Change Area_Of_Interest** (2 options available):
+    - **Option 1**: Define shapefile using the CRS: WGS84 ESPG 4326 and replace `Area_Of_Interest` with the uploaded shapefile in GEE Assets.
+    - **Option 2**: Draw a polygon within the Google Earth Engine Map, the polygon variable name (`geometry`) will appear and replace this with `Area_Of_Interest`.
+- **Exporting**: Area of interest and Sentinel-2 imagery are exported in GEE Assets; navigate to the Tasks panel on the left and select Run.
+- **Example Code**: `print('Sentinel-2 Cloud-Free Image Composite & Indices', S2_Processing('2023-01-01', '2023-12-30', 5, 'projects/data-mastery-challenge-sharing/assets/great_kampala'));`
+- **Execution**: Run the code.
+
+## Phase 4: Random Forest Classification
+- **Code**: [Google Earth Engine Script](https://code.earthengine.google.com/1ca471c1c121841cff2378fc5036a8a6)
+- **Goal**: Classifying the Sentinel-2 imagery through a Random Forest model using samples from OSM data.
+- **User Input Customization in the `RF_Classification` function**:
+  - **Change Area_Of_Interest**: As exported from the previous phase, i.e., Sentinel-2 Processing, `Area_Of_Interest` is imported from GEE Assets.
+  - **Change Sentinel2_Cloud_Free_Image**: As exported from the previous phase, `Sentinel2_Cloud_Free_Image` is imported from GEE Assets.
+  - **Change Land_Cover_Classifier_Vector_Points**: Data from the previous Sample Acquisition step is uploaded as GEE Assets and input as `Land_Cover_Classifier_Vector_Points`.
+- **Exporting**: Sentinel 2 Classified Map and Confusion Matrix are exported to Drive for sharing; navigate to the Tasks panel on the left and select Run.
+- **Example Code**: `print(RF_Classification('projects/data-mastery-challenge-sharing/assets/Area_of_Interest', 'projects/data-mastery-challenge-sharing/assets/Sentinel_2_Cloud_Free_Image_Composite', 'projects/data-mastery-challenge-sharing/assets/land_cover_reference_data_2023'));`
+- **Execution**: Run the code.
+

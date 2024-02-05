@@ -1,4 +1,5 @@
 # USER WORKFLOW MANUAL
+![kampala_classification](https://github.com/WYBin97/Data_Mastery_Challenge/assets/50994180/398666ee-24b1-4c5b-a3b4-19f6e9ae1c87)
 
 ## General Guidelines
 - **General #1**: Upon opening a new `.py` file, make sure you import or have downloaded the necessary modules stated at the top of the file. This can be done by opening a terminal and running: `pip install MODULENAME`
